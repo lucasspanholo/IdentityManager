@@ -60,19 +60,16 @@ builder.Services.AddAuthorization(opt =>
 });
 
 
-//value : Mx8Q~.UCu3z0MwS-t6rB6BGlOJC7hd4dx6M6cne
-//id - 2eb6b172-2692-469c-ac07-8a0b5ca2cc0e
-
 builder.Services.AddAuthentication().AddMicrosoftAccount(opt =>
 {
-    opt.ClientId = "2eb6b172-2692-469c-ac07-8a0b5ca2cc0e";
-    opt.ClientSecret = "Mx8Q~.UCu3z0MwS-t6rB6BGlOJC7hd4dx6M6cne";
+    opt.ClientId = "***********";
+    opt.ClientSecret = "***********";
 });
 
 builder.Services.AddAuthentication().AddFacebook(opt =>
 {
-    opt.ClientId = "2047650585701707";
-    opt.ClientSecret = "891140bbd8d572e69b09332d90ff9800";
+    opt.ClientId = "***********";
+    opt.ClientSecret = "***********";
 });
 
 
